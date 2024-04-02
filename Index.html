@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            background-color:transparent;
+            background-image: linear-gradient(to left, rgb(122, 80, 7), rgb(145, 121, 81));
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: inline-block;
+        }
+
+        .photo {
+            border: 2px solid black;
+            height: 1000px;
+            width: 600px;
+            margin-top: 50px;
+            margin-left: 300px;
+            background-image: url(https://images.unsplash.com/photo-1607863680069-9919fbdbe0b4?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+            background-repeat: no-repeat;
+            background-size: 700px;
+            display: inline-block;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+
+        .photo h1 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 30px;
+        }
+
+        .photo h2 {
+            color: rgb(94, 64, 10);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 0px;
+        }
+
+        .coffee {
+            height: 1000px;
+            width: 800px;
+            background-color: rgb(235, 230, 230);
+            float: right;
+            margin-top: 50px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            text-align: center;
+            margin-right: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(128, 88, 13);
+            font-style: italic;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+        }
+
+        h2 {
+            text-align: center;
+            color: grey;
+            font-style: normal;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .registration {
+            font-size: 20px;
+            margin: 40px;
+            color: rgb(119, 82, 12);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding: 20px;
+            text-align: justify;
+        }
+        .container button {
+            display: inline;
+            width: 23%;
+            margin: 0px 13px;
+            position: relative;
+            left: 150px;
+        }
+
+        .btn {
+            padding: 10px 9px;
+            color: rgb(187, 184, 179);
+            background-color: rgb(141, 100, 25);
+            border: 2px solid rgb(131, 79, 10);
+            border-radius: 4px;
+            font-size: 20px;
+            cursor: pointer;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: rgb(224, 221, 214);
+            border: 2px solid rgb(221, 217, 211);
+            color: rgb(145, 103, 12);
+        }
+        .BTN {
+            padding: 10px 9px;
+            color: rgb(116, 88, 38);
+            background-color: rgb(179, 179, 179);
+            border: 2px solid rgb(179, 179, 179);
+            border-radius: 4px;
+            font-size: 20px;
+            cursor: pointer;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .BTN:hover {
+            background-color: rgb(117, 78, 24);
+            border: 2px solid rgb(211, 207, 200);
+            color: white;
+        }
+
+        .inp {
+            border: 2px solid rgb(212, 177, 112);
+            float: right;
+            margin: 0px 10px;
+            padding: 5px 10px;
+            width: 65%;
+            background-color: #dbd4d4;
+            height: 50px;
+            border-radius: 8px;
+            font-size: 20px;
+            padding-left: 60px;
+        }
+        .fa-mars{
+            font-size: 30px;
+            color: white;
+            background-color: rgb(143, 110, 50);
+            margin: 0px 10px;
+            padding: 20px 30px;
+            border-radius: 50%;
+            margin-left: 10px;
+        }
+        .fa-mars:hover, .fa-mars:active {
+            color: rgb(175 138 75);
+            background-color: #d5d1d1;
+        }
+        .fa-venus {
+            font-size: 30px;
+            color: rgb(175 138 75);
+            background-color: #d5d1d1;
+            margin: 0px 10px;
+            padding: 20px 30px;
+            border-radius: 50%;
+        }
+
+        .fa-venus:hover, .fa-venus:active {
+            color: white;
+            background-color: rgb(163, 126, 56);
+        }
+        .cls{
+            display: inline-block;
+        }
+        .page{
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="signup">
+            <div class="photo">
+                <h1>Coffee</h1>
+                <h2>Fresh like Cappuccino</h2>
+            </div>
+            <div class="coffee">
+                <p>
+                <h1>Registration</h1>
+                <h2>click for your shoot</h2>
+                <form action="example-server.com">
+                <div class="registration">
+                    Name <input class="inp" type="text" name="my name" placeholder="John Doe">
+                    <br><br><br>
+                    Email <input class="inp" type="text" name="my email">
+                    <br><br><br><br>
+                    Gender &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa fa-mars "></i> male &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i
+                    class="fa fa-venus"></i> female
+                    <br><br><br>
+                    Date of Birth<input class="inp" type="datetime" name="my date of birth" placeholder="May 27, 1997">
+                    <br><br><br>
+                    City <input class="inp" type="text" name="text" placeholder="Yangon">
+                    <br><br><br>
+                    Country<input class="inp" type="text" name="text" placeholder="Mayanmar">
+                    <br><br><br><br>
+                    <button class="BTN" type="submit">CANCEL</button> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button class="btn" type="submit"> CONFIRM</button>
+                </div>
+                <div class="page">
+                    <div class="cls">Already have an account?</div>
+                    <a href="sign in.html">Register</a>
+                </div>
+                </form>
+                </p>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
